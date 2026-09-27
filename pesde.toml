@@ -1,0 +1,32 @@
+name = "seungpyo_lol/merge_gaem"
+version = "0.1.0"
+description = "Inspired by sobosuba"
+authors = ["@pyojun123"]
+repository = "https://github.com/seungpyo-lol/merge_gaem"
+license = "All Right Reserved"
+
+[target]
+environment = "roblox"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.2.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.5.1", target = "lune" }
+
+[dependencies]
+react = { wally = "roblox/react", version = "^17.3.11" }
+react-roblox = { wally = "jsdotlua/react-roblox", version = "^17.2.1" }
+profilestore = { wally = "lm-loleris/profilestore", version = "^1.0.3" }
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
